@@ -1,0 +1,12 @@
+name: Smoke Testinfg for infra and networking
+
+on:
+  workflow_call:
+
+jobs:
+  working-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Echo Message
+        run: echo "Smoke Testinfg is successfully ✔"
