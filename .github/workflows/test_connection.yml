@@ -1,4 +1,4 @@
-name: Test connection for pipeline
+name: Test Fleet health and Env Variable
 
 on:
   workflow_dispach:

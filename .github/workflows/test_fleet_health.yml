@@ -1,9 +1,7 @@
-name : Test Workflow
+name : Test Fleet health and Env Variables
 
 on: 
-  push:
-    branches:
-      - main
+  workflow_dispach:
 
 permissions:
   id-token: write
@@ -16,8 +14,8 @@ jobs:
     steps:
       - uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::720800607391:role/github-action-deploy-role
-          aws-region: us-east-1
+          role-to-assume: arn:aws:iam::824353504367:role/github-action-deploy-role
+          aws-region: ap-south-1
 
       - name: Print Private IPs
         run: |
